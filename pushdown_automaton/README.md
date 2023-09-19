@@ -9,13 +9,13 @@
 ## КС грамматика
 G = ({S,A,B}, {x,y,z}, F, S)\
 F:\
-S -> AB\
-A -> xAyy\
-B -> zzzBx\
-A -> $\varepsilon$\
-B -> $\varepsilon$
+S $\rightarrow$ AB\
+A $\rightarrow$ xAyy\
+B $\rightarrow$ zzzBx\
+A $\rightarrow$ $\varepsilon$\
+B $\rightarrow$ $\varepsilon$
 ## Формальное задание МП автомата
-P = ({ $q_0, q_1, q_2, q_3, q_4, q_5$ }, {x,y,z}, {1,2,3, $Z_0$ }, $\delta$, $q_0$ , $Z_0$ , { $q_5$ })
+$P = (\\{ q_0, q_1, q_2, q_3, q_4, q_5 \\},\\; \\{ x,y,z \\}, \\;\\{ 1,2,3, Z_0 \\}, \\;\delta, \\;q_0 ,\\; Z_0 ,\\; \\{ q_5 \\} )$
 1. $\delta(q_0, x, Z_0) = (q_1, 11Z_0)$
 2. $\delta(q_1, x, 1) = (q_1, 111)$
 3. $\delta(q_1, y, 1) = (q_2, \varepsilon)$
